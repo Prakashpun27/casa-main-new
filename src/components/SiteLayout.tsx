@@ -19,12 +19,13 @@ export function SiteLayout({ children }: { children: ReactNode }) {
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <header className="sticky top-0 z-40 backdrop-blur bg-background/80 border-b border-border/60">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12 h-20 flex items-center justify-between">
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center gap-3">
             <img
-              src={logoAsset.url}
+              src={logoIconAsset.url}
               alt="Casa Exotique"
-              className="h-14 w-auto"
+              className="h-10 w-auto"
             />
+            <span className="font-display text-xl tracking-wide text-foreground">Casa Exotique</span>
           </Link>
           <nav className="hidden lg:flex items-center gap-9">
             {NAV.map((n) => (
