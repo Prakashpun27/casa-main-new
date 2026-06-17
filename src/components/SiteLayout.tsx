@@ -74,7 +74,11 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <footer className="mt-32 border-t border-border/60 bg-secondary/50">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12 py-20 grid gap-14 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <div className="font-display text-3xl">Casa Exotique</div>
+            <img
+              src={logoAsset.url}
+              alt="Casa Exotique"
+              className="h-16 w-auto"
+            />
             <p className="mt-6 max-w-md text-sm leading-relaxed text-muted-foreground">
               A luxury architecture and design-build studio creating bespoke residences,
               hospitality environments, and developer-led experiences across India.
