@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, Section, Eyebrow } from "@/components/SiteLayout";
 import hero from "@/assets/hero.jpg";
+import bannerVideo from "@/assets/site-banner-vid.mp4.asset.json";
 import p1 from "@/assets/project-1.jpg";
 import p2 from "@/assets/project-2.jpg";
 import p3 from "@/assets/project-3.jpg";
@@ -86,11 +87,15 @@ function Index() {
         </div>
 
         <figure className="mt-16 lg:mt-24 relative overflow-hidden">
-          <img
-            src={hero}
-            alt="Luxury minimalist living room with travertine walls and warm light"
-            width={1600}
-            height={1100}
+          <video
+            src={bannerVideo.url}
+            poster={hero}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label="Casa Exotique luxury interiors showreel"
             className="w-full h-[60vh] lg:h-[78vh] object-cover"
           />
           <figcaption className="absolute bottom-6 left-6 right-6 flex justify-between text-bone text-xs uppercase tracking-[0.28em] text-background mix-blend-difference">
